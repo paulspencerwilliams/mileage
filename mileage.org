@@ -1,0 +1,23 @@
+*Tasks
+** DONE Estimated annual mileage
+** TODO Tank mpg
+** TODO Comulatiive mileage
+** TODO Add all data
+
+
+|       Date | Mileage | Quantity |  Cost | Estimated contract mileage | Tank mpg | Cumulative mpg |
+|------------+---------+----------+-------+----------------------------+----------+----------------|
+| 2016-06-13 |      24 |       37 |     0 |                       8760 |          |                |
+| 2016-06-17 |     426 |    33.61 | 37.95 |                      31025 |          |                |
+| 2016-06-20 |     683 |    22.12 | 24.97 |                      31025 |          |                |
+| 2016-06-24 |    1134 |    36.69 | 41.42 |                      34310 |          |                |
+| 2016-06-30 |    1577 |    36.95 | 40.61 |                      31755 |          |                |
+| 2016-07-06 |    2063 |    39.71 | 44.83 |                      31025 |          |                |
+| 2016-07-09 |    2386 |    25.58 | 28.88 |                      32120 |          |                |
+| 2016-10-25 |   11423 |        0 |     0 |                      30660 |          |                |
+#+TBLFM: $5='(* 365 (/ (string-to-number $2) (+ 1 (-(calendar-absolute-from-gregorian (org-date-to-gregorian $1 ))(calendar-absolute-from-gregorian (org-date-to-gregorian @2$1))))))
+
+
+| Start Date |   End Date | Duration |
+|------------+------------+----------|
+| 2004-08-07 | 2005-07-08 | #ERROR   |
